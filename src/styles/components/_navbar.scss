@@ -1,0 +1,13 @@
+.navbar{
+    background-color: $secondary;
+    height: 60px;
+    color: $white;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar_git-hub{
+    padding: 6px;
+    margin-right: 50px;;
+}

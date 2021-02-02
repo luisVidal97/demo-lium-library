@@ -1,0 +1,32 @@
+.home__nav{
+    height: 100px;
+    background-color: $primary;
+}
+
+.home__main-content{
+    display: flex;
+    margin: 0px 7%;
+}
+
+.home__div-title{
+    width: 60%;
+    h1{
+        font-family: $logoFont;
+        font-size: 6rem;
+        color: $primary;
+        text-align: center;
+    }
+}
+
+.home__secondary-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 30%;
+
+    p{
+        color: $primary;
+        font-size: 1.5rem;
+        margin-bottom: 15%;
+    }
+}
