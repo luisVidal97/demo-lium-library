@@ -1,11 +1,11 @@
 .sidebar{
     background-color: $primary;
     color: $white;
-    height: 100vh;
+    height: 100%;
     width: 300px;
     display: flex;
     flex-direction: column;
-    
+    position: fixed;
 }
 
 .sidebar__title {

@@ -19,15 +19,17 @@ export const NavigationRouter = () => {
             <SideBar />
             <div className="routers__secondary-content">
                 <Navbar />
-                <Switch>
-                    <Route exact path='/api/button' component={ButtonPage}/>
-                    <Route exact path='/api/input-number' component={InputNumberPage}/>
-                    <Route exact path='/api/input-text' component={InputTextPage}/>
-                    <Route exact path='/api/select' component={SelectInputPage}/>
-                    <Route exact path='/api/autocomplete' component={AutocompletePage}/>
-                    <Route exact path='/api/getting-start' component={GettingStartPage}/>
-                    <Redirect to='/api/getting-start'/>
-                </Switch>
+                <div className="routers__secondary-content-routes">
+                    <Switch >
+                        <Route exact path='/api/button' component={ButtonPage}/>
+                        <Route exact path='/api/input-number' component={InputNumberPage}/>
+                        <Route exact path='/api/input-text' component={InputTextPage}/>
+                        <Route exact path='/api/select' component={SelectInputPage}/>
+                        <Route exact path='/api/autocomplete' component={AutocompletePage}/>
+                        <Route exact path='/api/getting-start' component={GettingStartPage}/>
+                        <Redirect to='/api/getting-start'/>
+                    </Switch>
+                </div>
             </div>
         </div>
     )

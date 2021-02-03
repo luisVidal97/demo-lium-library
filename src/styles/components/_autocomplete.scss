@@ -1,0 +1,12 @@
+
+
+.autocomplete__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.autocomplete__link{
+    color: $secondary;
+    text-decoration: underline ; 
+}

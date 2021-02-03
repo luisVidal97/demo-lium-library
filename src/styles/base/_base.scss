@@ -9,6 +9,12 @@ html, body {
     width: 100vw;
 }
 
+hr{ 
+    background-color: #cccccc;
+    height: 1px; 
+    border: 0;
+}
+
 main {
     width: 100%;
 }
@@ -36,4 +42,12 @@ main {
 a {
     color: $white;
     text-decoration: none; 
+}
+
+.title-component {
+    color: $primary;
+}
+
+.text-bold{
+    font-weight: bold;
 }
