@@ -53,7 +53,8 @@ export const LoginPage = () => {
                 <div className="loginPage__inputs">
                     <p> Password: </p>
                     <InputText 
-                        placeholder="Write your Username" 
+                        type="password"
+                        placeholder="Write your password" 
                         value={form.password} 
                         onChange={ e => { setForm({...form, password: e.target.value}) }}
                     />

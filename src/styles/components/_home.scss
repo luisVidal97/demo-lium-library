@@ -1,6 +1,11 @@
 .home__nav{
     height: 100px;
     background-color: $primary;
+    display: flex;
+    flex-direction: row-reverse;
+    a{
+        padding: 10px;
+    }
 }
 
 .home__main-content{

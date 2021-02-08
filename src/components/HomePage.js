@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { Button } from 'lium-react-ui-library';
 
 export const HomePage = () => {
@@ -8,11 +8,15 @@ export const HomePage = () => {
 
     return (
         <div>
-            <div className="home__nav"></div>
+            <div className="home__nav">
+                <Link to={{ pathname: "https://github.com/luisVidal97/lium-react-ui-library" }}  target="_blank">
+                    <i className="fab fa-github fa-5x"></i>
+                </Link>
+            </div>
             <div className="home__main-content">
 
                 <div className="home__div-title">
-                    <h1 >Lium ui library for react</h1>
+                    <h1 >Lium UI library for React</h1>
                 </div>
 
                 <div className="home__secondary-content">
