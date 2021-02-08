@@ -1,8 +1,8 @@
+import { Button } from 'lium-react-ui-library';
+import { Link } from 'react-router-dom';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { SyntaxHighlighterCode } from './shared/SyntaxHighlighterCode';;
-import { Button } from 'lium-react-ui-library';
-import { Link } from 'react-router-dom';
 
 const importButton = `
     import { Button } from 'lium-react-ui-library';
