@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { SyntaxHighlighterCode } from './SyntaxHighlighterCode';
+import { SyntaxHighlighterCode } from './shared/SyntaxHighlighterCode';;
 
 import { SelectInput } from 'lium-react-ui-library';
 

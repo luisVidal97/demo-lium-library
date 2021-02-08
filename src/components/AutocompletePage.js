@@ -1,9 +1,8 @@
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
-import { SyntaxHighlighterCode } from './SyntaxHighlighterCode';
-
 import { AutocompleteInput } from 'lium-react-ui-library';
 import { Link } from 'react-router-dom';
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
+import { SyntaxHighlighterCode } from './shared/SyntaxHighlighterCode';;
 
 
 const importAutcomplete = `
@@ -239,7 +238,7 @@ export const AutocompletePage = () => {
             
             <hr />
             <br />
-            <h3 className="title-component">maxLength</h3>
+            <h3 className="title-component">onChange</h3>
             <p>
                This prop receive a function which execute when occur any change in the component:
             </p>

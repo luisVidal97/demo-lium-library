@@ -10,8 +10,9 @@ import { InputTextPage } from '../components/InputTextPage';
 import { SelectInputPage } from '../components/SelectInputPage';
 import { AutocompletePage } from '../components/AutocompletePage';
 import { GettingStartPage } from '../components/GettingStartPage';
-import { SideBar } from '../components/SideBar';
-import { Navbar } from '../components/Navbar';
+import { SideBar } from '../components/shared/SideBar';
+import { Navbar } from '../components/shared/Navbar';
+import { CustomizePage } from '../components/CustomizePage';
 
 export const NavigationRouter = () => {
     return (
@@ -27,10 +28,11 @@ export const NavigationRouter = () => {
                         <Route exact path='/api/select' component={SelectInputPage}/>
                         <Route exact path='/api/autocomplete' component={AutocompletePage}/>
                         <Route exact path='/api/getting-start' component={GettingStartPage}/>
+                        <Route exact path='/api/customize' component={CustomizePage}/>
                         <Redirect to='/api/getting-start'/>
                     </Switch>
                 </div>
             </div>
         </div>
-    )
+    );
 }

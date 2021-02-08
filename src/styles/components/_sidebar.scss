@@ -23,9 +23,9 @@
 }
 
 .sidebar__nav-item{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    padding: 20px 0px;
+    padding: 15px 0px;
     padding-left: 30px;
     &:hover{
         background-color: lighten($color: $primary, $amount: 5);
@@ -35,4 +35,10 @@
 .sidebar__nav-item-active{
     color: $secondary;
     background-color: $white;
+}
+
+.sidebar__components{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
 }

@@ -18,7 +18,7 @@ export const HomePage = () => {
                 <div className="home__secondary-content">
                     <p>
                         A small, simple and awesome library for React. You can use it  in your projects
-                        to create user beutiful user interface
+                        to create  beautiful user interface!
                     </p>
                     <Button shape="outlined" text="Let's get started" onClick={() => {
                         history.push("/api/getting-start");

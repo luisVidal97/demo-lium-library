@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { SyntaxHighlighterCode } from './SyntaxHighlighterCode';
+import { SyntaxHighlighterCode } from './shared/SyntaxHighlighterCode';
 
 import { InputText } from 'lium-react-ui-library';
 import { Link } from 'react-router-dom';
@@ -178,7 +178,7 @@ export const InputTextPage = () => {
             <br />
             <h3 className="title-component">value and onChange</h3>
             <p>
-               These props are used to bind the state of input and become a controlled component. Valu prop receive a string
+               These props are used to bind the state of input and become a controlled component. Value prop receive a string
                and onChange receive a function.
             </p>
             <ul>
