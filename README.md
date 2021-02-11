@@ -26,6 +26,18 @@ And then, in the project root run the following to install all required dependen
 npm install
 ```
 
+If you want to run the application, please go to the root directory of the project and run 'npm start'.
+```bash
+cd demo-lium-library  // go to the directory
+npm start             // Run application
+```
+
+If you want to build the application, please go to the root directory of the project and run 'npm run build'.
+```bash
+cd demo-lium-library  // go to the directory
+npm run build         // Build application
+```
+
 Like said above, this application contains information about how you can use  each component. Besides, you could find a small demo where you can interact with login, register and landing page. [Try now](https://vibrant-joliot-40e6e6.netlify.app/demo/login).
 ![App](/images/login.PNG)
 
