@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { SelectInput } from 'lium-react-ui-library';
 import { SyntaxHighlighterCode } from './shared/SyntaxHighlighterCode';;
@@ -40,6 +40,8 @@ const multiSelectInput = `
 
 export const SelectInputPage = () => {
 
+    const [sample, setSample] = useState();
+
     return (
         <div >
             <h1 className="title-component">SelectInput</h1>
@@ -55,7 +57,7 @@ export const SelectInputPage = () => {
             }} children={importSelectInput} />
 
             <p>
-               This component receive only these props:
+               This component receives only these props:
             </p>
             <ul>
                 <li>items: string *<span className="text-bold"> is required</span></li>
@@ -64,7 +66,9 @@ export const SelectInputPage = () => {
                 <li>multiSelect: boolean</li>
             </ul>
             <p>
-               Next, you can find more information about everyone.
+               It is important to know that when you click in the input, it will appear a list below the input.
+               The only way to hide it is doing click again in the input.
+                Next, you can find more information about everyone.
             </p>
             
             
@@ -90,13 +94,18 @@ export const SelectInputPage = () => {
                         ]} 
                 onSelectItems={ (items) => console.log(items) }
             />
-            
+            <br/>
+            <p>
+                The result of onSelectItems is an array with selected objects. If the mode is multiSelect,
+                the sesult will be an array with all thi objects. If is SingleSelect (multiSelect props is false )
+                only returns an array with one object.
+            </p>
 
             <hr />
             <br />
             <h3 className="title-component">title</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>title="whatever you want" - <span className="text-bold">default value is empty</span></li>
@@ -119,7 +128,7 @@ export const SelectInputPage = () => {
             <br />
             <h3 className="title-component">multiSelect</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>multiSelect="true" - <span className="text-bold">default value is "false"</span></li>
@@ -136,8 +145,11 @@ export const SelectInputPage = () => {
                             { id: 'COL', value: 'Colombia'},
                             { id: 'CAD', value: 'Canada'}
                         ]} 
-                onSelectItems={ (items) => console.log(items) }
+                onSelectItems={ (items) => setSample(items) }
             />
+            <pre>
+                { JSON.stringify(sample, null, 3)}
+            </pre>
 
         </div>
     );

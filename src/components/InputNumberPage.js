@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { SyntaxHighlighterCode } from './shared/SyntaxHighlighterCode';
 
@@ -47,12 +47,15 @@ const valueOnChancehInputNumber = `
 `;
 
 export const InputNumberPage = () => {
+
+    const [sample, setSample] = useState("50");
+
     return (
         <div >
         <h1 className="title-component">InputText</h1>
         <p>
             InputNumber component is a normal input that you can interact and allow the users to type only numbers,
-            as positive, negatives and decimal numbers, even formats them.
+            as positive, negatives and decimal numbers, even  you can formats them.
             <br />
             <br />
             if you want to use it, you must import it first:
@@ -212,17 +215,17 @@ export const InputNumberPage = () => {
         <p>
            These props are used to bind the state of input and become a controlled component. Value prop receives a string
            and onChange receives a function. It is important to know that, though this is number component, the returned value
-           is a number with string type.
+           is a number with string type and also return the event like a parameters. 
         </p>
         <ul>
             <li>value="" - <span className="text-bold">default value is empty</span></li>
-            <li>onChange = {`{ (e, number) => {} }`} - <span className="text-bold">default value is undefined. This can get the event and pss it by parameter</span></li>
+            <li>onChange = {`{ (e, number) => {} }`} - <span className="text-bold">default value is undefined. This can get the event and pass it by parameter</span></li>
         </ul>
         <ReactMarkdown  renderers={{
             code: SyntaxHighlighterCode
         }} children={valueOnChancehInputNumber} />
-        <InputNumber prefix='$' formatter='true' size='small'/>
-
+        <InputNumber prefix='$' formatter='true' size='small' value={sample} onChange={ ( _, number)=> { setSample(number)}}/>
+        <label>{sample}</label>
 
     </div>
     );

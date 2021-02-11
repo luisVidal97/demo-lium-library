@@ -62,8 +62,8 @@ export const GettingStartPage = () => {
                 code: SyntaxHighlighterCode
             }} children={npmInstall} />
             <p>
-                Please note that  you need to have react &gt;= 16.8.0 and react-dom 	&gt;= 16.8.0 are peer dependencies.
-                When you install the pacakage, you can use the components import the component you want like:
+                Please, note that  you need to have react &gt;= 16.8.0 and react-dom 	&gt;= 16.8.0 are peer dependencies.
+                When you install the package, you can use the components importing them like this:
             </p>
             <ReactMarkdown  renderers={{
                 code: SyntaxHighlighterCode
@@ -86,7 +86,7 @@ export const GettingStartPage = () => {
                Here, you can find a very small &nbsp;
                <Link className="autocomplete__link" to="/api/customize">
                     Demo App
-                </Link> &nbsp;tab in the sidebar.  using these components. So, go ahead!
+                </Link> &nbsp;tab in the sidebar using these components. So, go ahead and test it!
             </p>
         </div>
     );

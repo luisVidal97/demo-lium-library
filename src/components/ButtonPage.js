@@ -57,7 +57,7 @@ export const ButtonPage = () => {
             }} children={importButton} />
 
             <p>
-               This component receive only these props:
+               This component receives only these props:
             </p>
             <ul>
                 <li>text: string</li>
@@ -77,7 +77,7 @@ export const ButtonPage = () => {
             <br />
             <h3 className="title-component">text</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>text="Click here!" - <span className="text-bold">default value is empty</span></li>
@@ -94,7 +94,7 @@ export const ButtonPage = () => {
             <br />
             <h3 className="title-component">border</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>border="none"</li>
@@ -114,7 +114,7 @@ export const ButtonPage = () => {
             <br />
             <h3 className="title-component">color</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>color="primary" - <span className="text-bold">default value</span></li>
@@ -144,7 +144,7 @@ export const ButtonPage = () => {
             <br />
             <h3 className="title-component">disabled</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>disabled="true"</li>
@@ -162,7 +162,7 @@ export const ButtonPage = () => {
             <br />
             <h3 className="title-component">shape</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>shape="contained" - <span className="text-bold">default value</span></li>
@@ -180,7 +180,7 @@ export const ButtonPage = () => {
             <br />
             <h3 className="title-component">size</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>size="small"</li>
@@ -200,10 +200,10 @@ export const ButtonPage = () => {
             <br />
             <h3 className="title-component">onCLick</h3>
             <p>
-               This prop receive a function which it execute with onClick event:
+               This prop receives a function which it execute with onClick event:
             </p>
             <ul>
-                <li>onCLick=function - <span className="text-bold">default value is undefined</span></li>
+                <li>onCLick= function - <span className="text-bold">default value is undefined</span></li>
                 
             </ul>
             <ReactMarkdown  renderers={{

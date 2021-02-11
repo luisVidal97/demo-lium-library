@@ -54,7 +54,7 @@ export const AutocompletePage = () => {
             <h1 className="title-component">Autocomplete</h1>
             <p>
                 Autocomplete component is a normal text input with a extra functionality that alow you 
-                show several suggestions when the user type any thing. It is very easy to use it.
+                show several suggestions when the user type anything. It is very easy to use it.
                 <br />
                 <br />
                 if you want to use it, you must import it first:
@@ -65,7 +65,7 @@ export const AutocompletePage = () => {
             }} children={importAutcomplete} />
 
             <p>
-               This component receive only these props:
+               This component receives only these props:
             </p>
             <ul>
                 <li>ownItems: array of string</li>
@@ -111,7 +111,7 @@ export const AutocompletePage = () => {
             <br />
             <h3 className="title-component">border</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>border="none"</li>
@@ -133,7 +133,7 @@ export const AutocompletePage = () => {
             <br />
             <h3 className="title-component">size</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>size="small"</li>
@@ -155,7 +155,7 @@ export const AutocompletePage = () => {
             <br />
             <h3 className="title-component">color</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>color="primary" - <span className="text-bold">default value</span></li>
@@ -190,7 +190,7 @@ export const AutocompletePage = () => {
             <br />
             <h3 className="title-component">disabled</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>disabled="true"</li>
@@ -210,7 +210,7 @@ export const AutocompletePage = () => {
             <br />
             <h3 className="title-component">placeholder</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>placeholder="whatever you want" - <span className="text-bold">default value is empty</span></li>
@@ -225,7 +225,7 @@ export const AutocompletePage = () => {
             <br />
             <h3 className="title-component">maxLength</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>maxLength="20" - <span className="text-bold">default value is undefined. If you put any letter, it will not take it.</span></li>
@@ -240,10 +240,10 @@ export const AutocompletePage = () => {
             <br />
             <h3 className="title-component">onChange</h3>
             <p>
-               This prop receive a function which execute when occur any change in the component:
+               This prop receives a function which execute when occur any change in the component:
             </p>
             <ul>
-                <li>onChange= {`{ (e) => {} }`} - <span className="text-bold"> This receive the event of the object</span></li>
+                <li>onChange= {`{ (e) => {} }`} - <span className="text-bold"> This receives the event of the object</span></li>
             </ul>
             <ReactMarkdown  renderers={{
                 code: SyntaxHighlighterCode

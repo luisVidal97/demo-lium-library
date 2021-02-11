@@ -99,7 +99,7 @@ export const CustomizePage = () => {
                 <Link className="autocomplete__link" to="/api/getting-start">
                     Get started
                 </Link>  &nbsp;part, this package has some themes by default that are incorpored when you use
-                some component. This is a object with the follow structure :
+                some component. This is an object with the follow structure :
             </p>
             <ReactMarkdown  renderers={{
                 code: SyntaxHighlighterCode

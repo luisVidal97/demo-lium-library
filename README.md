@@ -16,7 +16,7 @@ If you want to know how use them, please direct of each one.
 If you want to take a overall look, please [visit it here.](https://vibrant-joliot-40e6e6.netlify.app/)
 
 ## Installation of this project 🔧
-You could install this project cloning [this repository](https://github.com/luisVidal97/lium-react-ui-library)
+You could install this project cloning [this repository:](https://github.com/luisVidal97/lium-react-ui-library)
 ```
 git clone https://github.com/luisVidal97/lium-react-ui-library.git
 ```

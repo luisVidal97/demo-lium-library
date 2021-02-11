@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { SyntaxHighlighterCode } from './shared/SyntaxHighlighterCode';
 
@@ -33,17 +33,24 @@ const sizeInputText = `
 const maxLengthInputText = `
     <InputText maxLength ="10" />
 `;
+const typeInputText = `
+    <InputText type="password" placeholder="password"/>
+    <InputText type="text" placeholder="text"/>
+`;
 const valueOnChancehInputText = `
-    <InputText value="lucho" onChange={ (e) => { console.log(e.target.value) } }/>
+    <InputText value={state} onChange={ (e) => { setState(e.target.value) } }/>
 `;
 
 export const InputTextPage = () => {
+
+    const [sample, setSample] = useState('Type Here!');
+
     return (
         <div >
             <h1 className="title-component">InputText</h1>
             <p>
                 InputText component is a normal input that you can interact and allow the users to type whatever
-                they want. The type of this input is text.
+                they want.
                 <br />
                 <br />
                 if you want to use it, you must import it first:
@@ -54,7 +61,7 @@ export const InputTextPage = () => {
             }} children={importText} />
 
             <p>
-               This component receive only these props:
+               This component receives only these props:
             </p>
             <ul>
                 <li>border: string</li>
@@ -63,6 +70,7 @@ export const InputTextPage = () => {
                 <li>size: string</li>
                 <li>placeholder: string</li>
                 <li>maxLength: string</li>
+                <li>type : string</li>
                 <li>value : string</li>
                 <li>onChange : function</li>
             </ul>
@@ -75,7 +83,7 @@ export const InputTextPage = () => {
             <br />
             <h3 className="title-component">border</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>border="none"</li>
@@ -95,7 +103,7 @@ export const InputTextPage = () => {
             <br />
             <h3 className="title-component">color</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>color="primary" - <span className="text-bold">default value</span></li>
@@ -125,7 +133,7 @@ export const InputTextPage = () => {
             <br />
             <h3 className="title-component">disabled</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>disabled="true"</li>
@@ -143,7 +151,7 @@ export const InputTextPage = () => {
             <br />
             <h3 className="title-component">size</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>size="small"</li>
@@ -163,7 +171,7 @@ export const InputTextPage = () => {
             <br />
             <h3 className="title-component">maxLength</h3>
             <p>
-               This prop receive a string which values can be:
+               This prop receives a string which values can be:
             </p>
             <ul>
                 <li>maxLength="10" - <span className="text-bold">default value is undefined. If you put any letter, it will not take it.</span></li>
@@ -172,6 +180,23 @@ export const InputTextPage = () => {
                 code: SyntaxHighlighterCode
             }} children={maxLengthInputText} />
             <InputText maxLength="10"/>
+            
+
+            <hr />
+            <br />
+            <h3 className="title-component">type</h3>
+            <p>
+               This prop receives a string which values can be:
+            </p>
+            <ul>
+                <li>type="password"</li>
+                <li>type="text" - <span className="text-bold">default value</span></li>
+            </ul>
+            <ReactMarkdown  renderers={{
+                code: SyntaxHighlighterCode
+            }} children={typeInputText} />
+            <InputText type="password" placeholder="password"/>
+            <InputText type="text" placeholder="text"/>
 
 
             <hr />
@@ -179,7 +204,8 @@ export const InputTextPage = () => {
             <h3 className="title-component">value and onChange</h3>
             <p>
                These props are used to bind the state of input and become a controlled component. Value prop receive a string
-               and onChange receive a function.
+               and onChange receive a function. It is important to know that the function you pass, it can receive the event like 
+               parameter.
             </p>
             <ul>
                 <li>value="" - <span className="text-bold">default value is empty</span></li>
@@ -188,8 +214,8 @@ export const InputTextPage = () => {
             <ReactMarkdown  renderers={{
                 code: SyntaxHighlighterCode
             }} children={valueOnChancehInputText} />
-            <InputText value="lucho" onChange={ (e) => { console.log(e.target.value) } }/>
-
+            <InputText value={sample} onChange={ (e) => { setSample(e.target.value); } }/>
+            <label>{sample}</label>
 
         </div>
     );
